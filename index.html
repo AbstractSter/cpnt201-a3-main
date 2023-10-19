@@ -4,82 +4,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Main Gallery</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Smith Gallery</title>
+  <link rel="stylesheet" href="css/navigation.css">
+  <link rel="stylesheet" href="css/text.css">
+  <link rel="stylesheet" href="css/gallery.css">
 </head>
-  <main class="max-w-prose m-auto">
-    <nav class="shadow-2xl border-b-[5px] border-slate-900 lg:text-lg leading-7">
-      <ul class="md:justify-center md:flex">
-        <li class="text-gray-900 hover:bg-gray-700 hover:text-white hover:underline rounded-md px-3 py-2 text-sm font-medium"><a class="capitalize block" a href="#">Main Gallery</a></li>
-        <li class="text-gray-900 hover:bg-gray-700 hover:text-white hover:underline rounded-md px-3 py-2 text-sm font-medium"><a class="capitalize block" a href="#">Current Displays</a></li>
-        <li class="text-gray-900 hover:bg-gray-700 hover:text-white hover:underline rounded-md px-3 py-2 text-sm font-medium"><a class="capitalize block" a href="#">Upcoming Markets</a></li>
-      </ul>
-    </nav>
-  <h1 class="text-center text-6xl my-6 mx-6">Main Gallery</h1>
-  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-2">
-    <article class="flex flex-col items-baseline">
-      <img class="align-middle" src="images/calming-chromatics.jpg">
-      <h3 class="text-2xl text-center">Calming Chromatics</h3>
-      <p class="text-center">16" x 20" | Acrylic paint on canvas</p>
-    </article>
-    <article class="flex flex-col">
-      <img class="items-baseline" src="images/convergence.jpg">
-      <h3 class="text-2xl text-center">Convergence</h3>
-      <p class="text-center">29.5" Diameter circle | Latex + spray paint on canvas</p>
-    </article>
-    <article class="flex flex-col">
-        <img class="items-baseline" src="images/dog-toy.jpg">
-        <h3 class="text-2xl text-center">Dog-Toy</h3>
-        <p class="text-center">10" x 10" | Spray paint on wood panel</p>
-    </article>
-    <article class="flex flex-col">
-      <img class="items-baseline" src="images/electronic-monolith-4.0.jpg">
-      <h3 class="text-2xl text-center">Electronic Monolith 4.0</h3>
-      <p class="text-center">24" x 24" | Latex + spray paint on canvas</p>
-    </article>
-    <article class="flex flex-col">
-      <img class="items-baseline" src="images/elope.jpg">
-      <h3 class="text-2xl text-center">Elope</h3>
-      <p class="text-center">12" x 36" | Spray paint on canvas</p>
-    </article>
-    <article class="flex flex-col">
-      <img class="items-baseline" src="images/hexahedron-1-2-3.jpg">
-      <h3 class="text-2xl text-center">Hexahedron 1, 2, 3</h3>
-      <p class="text-center">7", 8.5", 10" Hexagons | Spray paint on canvas</p>
-    </article>
-    <article class="flex flex-col">
-      <img class="items-baseline" src="images/hexahedron-4-5-6.jpg">
-      <h3 class="text-2xl text-center">Hexahedron 4, 5, 6</h3>
-      <p class="text-center">7", 8.5", 10" Hexagons | Spray paint on canvas</p>
-    </article>
-    <article class="flex flex-col">
-      <img class="items-baseline" src="images/hexahedron-7-8.jpg">
-      <h3 class="text-2xl text-center">Hexahedron 7, 8</h3>
-      <p class="text-center">8.5" Hexagons | Acrylic paint on canvas</p>
-    </article>
-    <article class="flex flex-col">
-      <img class="items-baseline" src="images/pink-peaks.jpg">
-      <h3 class="text-2xl text-center">Pink Peaks</h3>
-      <p class="text-center">6" x 36" | Latex + spray paint on canvas</p>
-    </article>
-    <article class="flex flex-col">
-      <img class="items-baseline" src="images/progress-report.jpg">
-      <h3 class="text-2xl text-center">Progress Report</h3>
-      <p class="text-center">30" x 40" | Latex + spray paint on wood panel</p>
-    </article>
-    <article class="flex flex-col">
-      <img class="items-baseline" src="images/square-series-5-6-7-8.jpg">
-      <h3 class="text-2xl text-center">Square Series 5, 6, 7, 8</h3>
-      <p class="text-center">30" x 40" | Latex + spray paint on wood panel</p>
-    </article>
-    <article class="flex flex-col">
-      <img class="items-baseline" src="images/target-practice.jpg">
-      <h3 class="text-2xl text-center">Target Practice</h3>
-      <p class="text-center">36" x  36" | Spray paint on canvas</p>
-    </article>
-</div> 
+<body>
+  <nav>
+    <div class="nav-title"><a href="index.html">The SCAG</a></div>
+      <ul class="nav-bar-menu-buttons">
+        <li class="inactive"><a href="gallery.html">Main Gallery</a></li>
+        <li class="inactive"><a href="current-displays.html">Current Displays</a></li>
+        <li class="inactive"><a href="upcoming-markets.html">Upcoming Markets</a></li>
+    </ul>
+  </nav>
+    <header>
+      <section id="hero">
+        <div class="main-page-hero-section"></div>
+        <h2>Welcome to The Smith Contemporary Art Gallery</h2>
+        <h4>Enter your email below to subscribe to our mailing list and be the first to know about upcoming exhibitions, artist talks and night markets</h4>
+        <form
+  action="https://formspree.io/f/xzblkqla"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    What interests you about The SCAG?:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+      </section>
+    </header>
+  <main>
+    <h1>The Smith Contemporary Art Gallery</h1>
+      <p>Established in 2023, The Smith Contemporary Art Gallery (SCAG) is a non-profit gallery located directly next to the Southern Alberta Institute of Technology campus in Calgary, AB, Canada.</p>
+      <p>The SCAG's goal is to highlight the work of local artists creating a stronger Canadian art community. The SCAG hosts group exhibitions from an array of artists all of which use a wide variety of mediums. These types of shows helps to juxtapose the art adding value to each of the works on display. Each group exhibition runs for a 2-month window and can be extended if public interest is high.</p>
+    <h3>Community Building</h3>
+      <p>In addition to the group exhibitions, The SCAG will host weekly artist talks with past and present gallery exhibitors. These are free talks that are highly recommended for anyone looking to break into the art world or anyone looking to learn a new tip or trick for their existing craft.</p>
+    <h3>Night Markets</h3>
+      <p>The SCAG hosts monthly night markets from May until September. These markets are open to any and all artisan creators! Space for each night market is limited to a first come, first serve basis at the discretion of SCAG staff.</p>
+    <h3>Private Events</h3>
+      <p>The SCAG has a number of event spaces available for rent. These spaces range from 1,000 to 10,000 square feet depending on the requirements for your event. Inquiries for event space can be directed to the marketing and events team.</p>
+  </main>
   <footer>
-    <h3 class="text-2xl">Menu</h3>
+    <h3>Menu</h3>
       <div class="footer-menu-bar">
         <ul>
           <li><a href="gallery.html">Main Gallery</a></li>
@@ -102,5 +75,5 @@
         })();</script><a href="https://1map.com/map-embed"></a></div>
     <p>&copy; 2023 Sterling Smith</p>
   </footer>
-</main>
+</body>
 </html>

@@ -5,6 +5,7 @@ CPNT 201 - Assignment 3 - Tailwind in a Branch
 
 ### Attributions
 - Code from CPNT 260 - Final Project
-- [Flowbite](https://flowbite.com/blocks/marketing/hero/)
+- [Flowbite - Hero Section](https://flowbite.com/blocks/marketing/hero/)
+- [Flowbite - Footer](https://flowbite.com/docs/components/footer/)
 - Classmate help: Chad Cervantez, Sydney Bruce
 - Instructor help: Ashlyn Knox, Tony Grimes
